@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rússia e Ucrânia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: red;
+            grid-area: he;
+        }
+
+        main {
+            background-color: azure;
+            grid-area: ma;
+        }
+
+        section {
+            background-color: blue;
+            grid-area: se;
+        }
+
+        footer {
+            background-color: yellow;
+            grid-area: fo;
+        }
+
+        #ucrania {width: 50%;
+            float: right;
+            display: grid;
+            grid-template-columns: 1fr 0fr;
+            grid-template-rows: 50vh 50vh;
+            grid-template-areas: "se" "fo";
+        }
+
+        #russia {width: 50%;
+            float: left;
+            display: grid;
+            grid-template-columns: 1fr 0fr 0fr;
+            grid-template-rows: 33.3vh 33.3vh 33.3vh;
+            grid-template-areas: "ma" "se" "he";
+        }
+    </style>
+</head>
+
+<body>
+    <div id="russia">
+        <header>
+        </header>
+
+        <main>
+        </main>
+
+        <section>
+        </section>
+
+        <footer>
+        </footer>
+    </div>
+
+    <div id="ucrania">
+        <header>
+        </header>
+
+        <main>
+        </main>
+
+        <section>
+        </section>
+
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
